@@ -4,8 +4,8 @@ project(cpp_sandbox)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 set(SOURCE_FILES
-    container/map.cpp
-#    container/vector.cpp
+#    container/map.cpp
+    container/vector.cpp
 #    dfs/combination.cpp
 #    dfs/permutation.cpp
 #    dfs/permutation_2.cpp
