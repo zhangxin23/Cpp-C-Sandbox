@@ -41,4 +41,31 @@ int main() {
     cout << "size: " << ms.size() << endl;
 
     cout << "key a count is " << ms.count("a") << endl;
+
+
+    cout << "=====================================" << endl;
+
+    map<string, int> second_map;
+    second_map["a"] = 1;
+    second_map["b"] = 2;
+    second_map["c"] = 3;
+    for(map<string, int>::iterator second_it = second_map.begin(); second_it != second_map.end(); second_it++) {
+        cout << second_it->first << "---" << second_it->second << endl;
+    }
+
+    if(second_map.find("a") != second_map.end())
+        cout << "find opt: " << second_map["a"] << endl;
+
+    if(second_map.find("aaa") != second_map.end())
+        cout << "find aaa" << endl;
+    else
+        cout << "not find aaa" << endl;
+
+    second_map["d"] = 4;
+    cout << second_map["d"] << endl;
+
+    cout << "count: " << second_map.size() << endl;
+    second_map.erase("d");
+    second_map.erase("c");
+    cout << "count: " << second_map.size() << endl;
 }

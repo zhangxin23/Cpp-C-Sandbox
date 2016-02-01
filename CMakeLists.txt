@@ -6,6 +6,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 set(SOURCE_FILES
 #    container/map.cpp
     container/vector.cpp
+#    container/set.cpp
 #    dfs/combination.cpp
 #    dfs/permutation.cpp
 #    dfs/permutation_2.cpp
@@ -28,6 +29,8 @@ set(SOURCE_FILES
 #    string/modifier.cpp
 #    string/operations.cpp
 #    README.md
+#        pointer/memset_test.cpp
+#        pointer/big_little_endian.cpp
 )
 
 add_executable(cpp_sandbox ${SOURCE_FILES})
